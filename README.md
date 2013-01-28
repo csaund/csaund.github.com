@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Carolyn Saund
 1/26/13
 
@@ -5,3 +6,9 @@ Carolyn Saund
 the good people at google who create resume templates, as well as
 the honorable Eric Weinstein of Codeacademy who has stuck with me
 through thick and thin teaching me CSS. 
+=======
+csaund.github.com
+=================
+
+For index, resume, and bio. A lot of information about ME. 
+>>>>>>> 5f98fe27ce234e82d7becfc11d730757d487be91
