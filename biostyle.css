@@ -24,7 +24,9 @@ div{
 
 a{
 	text-decoration:none;
-	color:#5F9EA0;
+	color:#FFFFFF;
+	float: center;
+	margin-left:50%;
 }
 
 a:hover{
