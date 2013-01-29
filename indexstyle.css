@@ -24,6 +24,8 @@ div{
 a{
 	text-decoration:none;
 	color:#5F9EA0;
+	float: center;
+	margin-left: 50%;
 }
 
 a:hover{
@@ -42,6 +44,7 @@ img{
 #headshot{
 	width: 400px;
 	height:300px;
+	float: right;
 }
 
 #email{
@@ -58,7 +61,7 @@ img{
 	float: left;
 	margin-top: 50px;
 	width: 10%;
-	height: 550px;
+	height: 500px;
 	background-color: #A52A2A;
 	margin-bottom: 10px;
 }
@@ -68,7 +71,7 @@ img{
 	float: right;
 	margin-top: 50px;
 	width: 88%;
-	height: 1300px;
+	height: 500px;
 	background-color: #FDFDF0;
 	margin-bottom: 10px;
 }
