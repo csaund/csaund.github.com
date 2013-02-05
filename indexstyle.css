@@ -24,7 +24,6 @@ div{
 a{
 	text-decoration:none;
 	color:#FFFFFF;
-	float: center;
 	margin-left: 50%;
 }
 
@@ -36,7 +35,6 @@ a:hover{
 img{
 	width:50px;
 	height:50px;
-	float:center;
 	padding-top:5px;
 	margin-left:50%;
 }
