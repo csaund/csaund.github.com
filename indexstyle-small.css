@@ -92,6 +92,7 @@ span{
 }
 
 #footer {
+	display:none;
 	position: relative;
 	height: 50px;
 	background-color: #EED5B7;
