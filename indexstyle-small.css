@@ -7,7 +7,7 @@ div{
 	position: fixed;
 	width: 97.5%;
 	margin-top: -20px;
-	height: 60px;
+	height: 10%;
 	background-color: #FEEECD;
 	margin-bottom: 10px;
 }
@@ -27,10 +27,6 @@ a{
 	margin-left: 50%;
 }
 
-a:hover{
-	text-decoration:none;
-	font-weight:bold;
-}
 
 img{
 	width:50px;
@@ -59,7 +55,7 @@ img{
 	float: left;
 	margin-top: 50px;
 	width: 10%;
-	height: 500px;
+	height: 90%px;
 	background-color: #A52A2A;
 	margin-bottom: 10px;
 }
@@ -69,7 +65,7 @@ img{
 	float: right;
 	margin-top: 50px;
 	width: 88%;
-	height: 500px;
+	height: 90%px;
 	background-color: #FDFDF0;
 	margin-bottom: 10px;
 }

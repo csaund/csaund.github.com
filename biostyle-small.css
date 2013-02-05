@@ -28,10 +28,6 @@ a{
 	margin-left:50%;
 }
 
-a:hover{
-	text-decoration:none;
-	font-weight:bold;
-}
 
 img{
 	width:400px;
@@ -54,7 +50,7 @@ img{
 	float: left;
 	margin-top: 50px;
 	width: 10%;
-	height: 550px;
+	height: 90%;
 	background-color: #A52A2A;
 	margin-bottom: 10px;
 }
@@ -64,7 +60,7 @@ img{
 	float: right;
 	margin-top: 50px;
 	width: 88%;
-	height: 1350px;
+	height: 90%;
 	background-color: #FDFDF0;
 	margin-bottom: 10px;
 }
