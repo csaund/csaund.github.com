@@ -46,7 +46,7 @@ img{
 }
 
 .left {
-	position: relative;
+	position: fixed;
 	float: left;
 	margin-top: 50px;
 	width: 10%;
