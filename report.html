@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>security report</title>
+	<link rel="stylesheet" type="text/css" href="report.css">
+
+</head>
+
+<body>
+
+<div class="header"><span class="title"><img src="flower_banner_pink.jpg" alt="flowers" width = 1200 height = 300></span></div>
+
+<p><h2> Security Review</h2></p>
+<p><h3>by Carolyn Saund</h3></p> 
+
+<p><ul>
+	<li><h3>Introduction</h3>
+		<p>I was instructed to inspect Jessie Serrino's scorecenter webapp, which provides
+			an api for storing and retreiving high scores from online games, for 
+			security vulnerabilities. </p>
+	</li>
+	<li><h3>Methodology</h3>
+		<p>I first read through her implementation of the scorecenter looking for any
+		type of vulnerability, then when I located a perceived security threat I
+		tested her webapp with emphasis and intent on exploiting that vulnerability.</p>
+	</li>
+	<li><h3>Abstract of Findings</h3>
+		<p>According to my findings, it is possible to maniuplate the database and even
+		the entire database system with the proper input to the database. This can be
+		easily remided by checking input prior to inserting it into the database to 
+		ensure that it is not malicious. However, even with these checks it is possible
+		to break the database by overloading it with input that is too large. I suggest
+		that there be a known size limit on the client side to prevent unintentional 
+		malicious behavior by the client. Additionally, there are some issues with 
+		implementation of the code that reveal too much about the structure of this 
+		software that can be fixed using the suggestions provided below.</p>
+	</li>
+	<li><h3>Issues Found</h3>
+		<ol><li><p>Cross-Site Scripting Vulnerability
+			<ul>
+				<li>Location: web.js, line 46, 65, 84, 91 </li>
+				<li>Severity: high. Gives malicious user opportunity to corrupt entire
+					database as well as client site of webapp.</li>
+				<li>Description: User input is never checked or sanitized so it is possible
+					to use as input to the database any sort of code which alters the rest of
+					the file and, if used properly, could harm the database as well as the client
+					site if the client site does not sanitize input. Similarly, the user good input
+					a malicious tag such as an img tag to display something non-text on the site.
+						ex.     var game_name = req.query.game_title;	(Line 46)
+					in this situation if the game title field in the request were malicious code
+					it is possible that code could correspond to corruption of the game's scores,
+					users, or other game's fields.</li>
+				<li>Resolution: Sanitize user input. That is, before blindly using the information
+					passed in the request, perhaps white-list only certain phrases, or alternatively
+					only allow user names or games that are one string and simply take the first string
+					from the request in order to cut out any sort of malicious code that may be lurking
+					in the rest of the request body. Validating objects after being created using a 
+					white list is more difficult in this situation but is also a valid solution. You 
+					could also just stringify the entire user input. 
+						ex. var game_name = JSON.stringify(req.query.gametitle;</li></ul></p></li>
+		<li><p>Data Overload: too much input in a field or in the database in general results in 
+					discontinued service.
+			<ul> 
+				<li>Location: web.js, response.body line 46/anywhere that deals with user input.</li> 
+				<li>Severity of issue: high. Low probability. If the database becomes overloaded 
+					and loses all of the information in it that is a very severe issue. However, the 
+					liklihood of this happening is fairly low. Then again, if somebody were targeting this
+					software they could easily write a script (as I did) to overload a single input
+					field and destroy the entire system.</li>
+				<li>Description: I wrote a script to input username "Carohacks" game title "h4X0r5"
+					score "last-night" 800 million times. That is, the score was the string "last-night"
+					800 million times. The database broked. </li>
+				<li>Resolution: check the size of the input before blindly putting it into the database.</li></ul></p></li>
+		<li><p>Denial of Service Bug due to too many requests
+			<ul>
+				<li>Location: web.js line 62.</li>
+				<li>Severity: low. Too many requests from too many locations is an unlikely issue
+					in this software, and if it did occur no harm would be done, the client would just
+					have to request at a later time.</li>
+				<li>Description: The code doesn't handle this issue so it's just a problem that exists.</li>
+				<li>Resolution: Load-balancing on the network side of things.</li></ul></p></li>
+		<li><p>Transparent Path Errors
+			<ul>
+				<li>Location: web.js LACK of lines.</li>
+				<li>Severity: low. Not the end of the world, just reveals more about your implementation
+					than you probably want people to know.</li>
+				<li>Description: an attempt to go to a path that does not exist reveals that the path does
+					not exist instead of offering a 404 page or anything so it shows something about the
+					source code that should remain unknown to clients. If you go to /foo where foo is 
+					anything that is a post request in your file, it reveals there is a post but no 
+					get as opposed to displaying an unhelpful 404. I tried to go to /submit.json and it said 
+					cannot GET /submit.json</li>
+				<li>Resolution: create get requests for /submit.json and /user_find
+					ex app.get('/user_find', function(req, res) {
+							res.send("404");</li></ul>
+					}</p></li></ol>
+		
+	<li><h3>Conclusion</h3>
+		<p>This software is exceedingly insecure and you could basically F up the database
+			ten ways to sunday. In the future, all of these issues -- checking input for malintent,
+			size, datatype, not revealing implementation -- can be checked using the suggested
+			resolutions: examining input before inserting it into the database. This can be
+			a costly procedure, but it is made phenomenally easier by strictly limiting input to, say, 
+			one string, or only allowing certain characters. The latter solution can be quite
+			costly, however, because it takes a lot of time and many operations to check a character
+			against a list of approved characters. Yet the cost of any security is well worth it
+			considering the alternative is a sad and dysfunctional piece of software. </p></li></ul>
+</body>
+</html>
