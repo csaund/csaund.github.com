@@ -29,18 +29,6 @@ void print_array(cell grid[][GS]){
 	return;
 }
 	
-/*
-int init_grid(){
-	int grid[GS][GS];
-	for(int i = 0; i < GS; i++){
-		for(int j = 0; j < GS; j++){
-			grid[i][j] = 0;
-		}
-	}
-	grid[GS-1][GS-1] = 10;
-	return grid;
-}
-*/
 
 float up_val(cell grid[][GS], int i, int j){
 	if(i > 0){
@@ -114,7 +102,8 @@ bool infinity_norm_thresh(cell grid[][GS]){
 		
 }
 
-int main(){
+/*
+cell** init_grid(){
 	cell grid[GS][GS];
 	for(int i = 0; i < GS; i++){
 		for(int j = 0; j < GS; j++){
@@ -122,10 +111,12 @@ int main(){
 			grid[i][j].new_val = 0;
 		}
 	}
-	grid[0][GS-1].new_val = 10;
+	grid[0][GS-1].old_val = 10;
+	return grid;
+}
+*/
 
-	print_array(grid);
-	cout << endl;
+void value_iteration(cell grid[][GS]){
 	int k = 0;
 	while(true){
 		for(int i = 0; i < GS; i++){
@@ -138,6 +129,8 @@ int main(){
 			break;
 		}
 
+			//iterate through doing bellman backup, updating new_val,
+			//at end, go through once more, updating old val to be new val.
 		for(int i = 0; i < GS; i++){
 			for(int j = 0; j < GS; j++){
 				grid[i][j].old_val = grid[i][j].new_val;
@@ -148,8 +141,21 @@ int main(){
 	}
 	cout << k << endl;
 	print_array(grid);
-	//iterate through doing bellman backup, updating new_val,
-	//at end, go through once more, updating old val to be new val.
+}
+
+int main(){
+	//cell grid[][GS] = init_grid();
+	cell grid[GS][GS];
+	for(int i = 0; i < GS; i++){
+		for(int j = 0; j < GS; j++){
+			grid[i][j].old_val = 0;
+			grid[i][j].new_val = 0;
+		}
+	}
+	grid[0][GS-1].new_val = 10;
+	//print_array(grid);
+	//cout << endl;
+	value_iteration(grid);
 	return 0;
 }
 
