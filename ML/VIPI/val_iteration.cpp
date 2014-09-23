@@ -17,6 +17,8 @@ const float EPSILON = 0.001;
 struct cell{
 	float old_val;
 	float new_val;
+	string old_act;
+	string new_act;
 };
 
 void print_array(cell grid[][GS]){
@@ -143,6 +145,12 @@ void value_iteration(cell grid[][GS]){
 	print_array(grid);
 }
 
+void polity_iteration(cell grid[][GS]){
+
+
+}
+
+
 int main(){
 	//cell grid[][GS] = init_grid();
 	cell grid[GS][GS];
@@ -150,6 +158,8 @@ int main(){
 		for(int j = 0; j < GS; j++){
 			grid[i][j].old_val = 0;
 			grid[i][j].new_val = 0;
+			grid[i][j].old_act = "up";
+			grid[i][j].new_act = "up";
 		}
 	}
 	grid[0][GS-1].new_val = 10;
