@@ -1,0 +1,3 @@
+#/bin/sh
+echo compiling C++ -Wall
+g++ -Wall -o valpol_iteration $1 

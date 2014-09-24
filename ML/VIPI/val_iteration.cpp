@@ -4,10 +4,18 @@
 #include <cmath>
 using namespace std;
 
+
+/*
+AML Project 1
+Carolyn Saund
+24 Sept 2014
+*/
+
 const int GRID_SIZE = 15;
 const int GS = GRID_SIZE;
 const float GAMMA = 0.9;
 const float EPSILON = 0.001;
+int bell_count = 0;
 //initialize board
 //print board
 //loop through bellman backup
@@ -96,6 +104,7 @@ act_val_pair bellman_backup(cell grid[][GS], int i, int j, string act){
 					 0.05 *  left_val(grid, i, j) + 
 					 0.05 *  down_val(grid, i, j));
 	if(act == ""){
+			bell_count += 4;
 			float max = 0;
 			if (max < down){
 					max = down;
@@ -115,6 +124,7 @@ act_val_pair bellman_backup(cell grid[][GS], int i, int j, string act){
 					act_val.action = ">"; }
 	}
 	else{
+		bell_count++;
 		act_val.action = act;
 		if(act == "d"){
 			act_val.value = down;
@@ -132,6 +142,7 @@ act_val_pair bellman_backup(cell grid[][GS], int i, int j, string act){
 	return act_val;
 }
 
+
 bool infinity_norm_thresh(cell grid[][GS]){
 	for(int i = 0; i < GS; i++){
 		for(int j = 0; j < GS; j++){
@@ -145,43 +156,6 @@ bool infinity_norm_thresh(cell grid[][GS]){
 		
 }
 
-/*
-cell** init_grid(){
-	cell grid[GS][GS];
-	for(int i = 0; i < GS; i++){
-		for(int j = 0; j < GS; j++){
-			grid[i][j].old_val = 0;
-			grid[i][j].new_val = 0;
-		}
-	}
-	grid[0][GS-1].old_val = 10;
-	return grid;
-}
-*/
-
-void value_iteration(cell grid[][GS]){
-	int k = 0;
-	while(true){
-		for(int i = 0; i < GS; i++){
-			for(int j = 0; j < GS; j++){
-				grid[i][j].new_val = bellman_backup(grid, i, j, "").value;
-			}
-		}
-		if(infinity_norm_thresh(grid)){
-			break;
-		}
-	//iterate through doing bellman backup, updating new_val,
-	//at end, go through once more, updating old val to be new val.
-		for(int i = 0; i < GS; i++){
-			for(int j = 0; j < GS; j++){
-				grid[i][j].old_val = grid[i][j].new_val;
-			}
-		}
-		k++;
-	}
-	cout << k << endl;
-	print_array(grid, true);
-}
 
 void init_pi(cell grid[][GS], string acts[4]){
 	for(int i = 0; i < GS; i++){
@@ -212,6 +186,7 @@ void policy_stabilize(cell grid[][GS]){
 	}
 }
 
+
 void policy_improvement(cell grid[][GS]){
 	//check that each action matches max action
 	act_val_pair av;
@@ -231,6 +206,83 @@ void policy_improvement(cell grid[][GS]){
 	}
 }
 
+
+//need to simulate probabalistically not going the right place
+void move(cell grid[][GS], int* i, int* j, string action){
+	float r = rand() % 100;
+	if(action == "^"){
+		if(r < 50){
+			if(*i > 0){
+				*i= *i-1;	
+			}
+		}
+		//0.25 left
+		else if(r >= 50 && r < 75){
+			move(grid, i, j, "<");
+		}
+		//0.25 right
+		else{
+			if(*j < GS-1){
+				*j = *j+1;
+			}
+		}
+	}
+	else if(action == "d"){
+		if(*i < GS-1){
+			*i = *i+1;
+		}
+	}
+	else if(action == "<"){
+		if(*j > 0){
+			*j = *j-1;
+		}
+	}
+	else if(action == ">"){
+		//0.9 going right
+		if(r < 90){
+			if(*j < GS-1){
+				*j = *j+1;
+			}
+		}
+		//0.05 left
+		else if(r >= 90 && r < 95){
+			move(grid, i, j, "<");
+		}
+		//0.05 down
+		else{
+			move(grid, i, j, "d");
+		}
+	}
+	else return;
+}
+
+float policy_evaluation(cell grid[][GS]){
+	//start bottom left, 
+	//gamma^#steps * reward
+	//only one reward (top right)
+	int i = GS-1;
+	int j = 0;
+	int c = 0;
+	for(int k = 0; k < 100; k++){
+		if(grid[i][j].old_val == 10){
+			return (pow(GAMMA, c)*10);
+		}
+		else{
+			c++;
+			move(grid, &i, &j, grid[i][j].new_act);
+		}
+	}
+	return 0;
+}
+
+float quality(cell grid[][GS]){
+	float avg = 0;
+	for(int i = 0; i < 100; i++){
+		avg += policy_evaluation(grid);
+	}
+	return avg/100;
+}
+
 //randomly initialize a policy (an action for each state)
 //calculate value of policy
 //take greedy at every step
@@ -239,8 +291,8 @@ void policy_improvement(cell grid[][GS]){
 void policy_iteration(cell grid[][GS]){
 	string acts[4] = {"^", "d", ">", "<"};
 	init_pi(grid, acts);
-	print_array(grid, false);
 	int k = 0;
+	float q = 0;
 	bool match = false;
 	while(!match){
 		match = true;
@@ -257,12 +309,44 @@ void policy_iteration(cell grid[][GS]){
 				}
 			}
 		}
+		q = quality(grid);
+		cout << "b: " << bell_count << endl;
+		cout << "quality: " << q << endl;
 		k++;
 	}
 	cout << k << endl;
 	print_array(grid, false);
 	print_array(grid, true);
 	cout << endl;
+}
+
+void value_iteration(cell grid[][GS]){
+	int k = 0;
+	float q = 0;
+	while(true){
+		for(int i = 0; i < GS; i++){
+			for(int j = 0; j < GS; j++){
+				grid[i][j].new_val = bellman_backup(grid, i, j, "").value;
+			}
+		}
+		if(infinity_norm_thresh(grid)){
+			break;
+		}
+	//iterate through doing bellman backup, updating new_val,
+	//at end, go through once more, updating old val to be new val.
+		for(int i = 0; i < GS; i++){
+			for(int j = 0; j < GS; j++){
+				grid[i][j].old_val = grid[i][j].new_val;
+			}
+		}
+		policy_improvement(grid);
+		q = quality(grid);
+		cout << "b: " << bell_count << endl;
+		cout << "quality: " << q << endl;
+		k++;
+	}
+	cout << k << endl;
+	print_array(grid, true);
 }
 
 
@@ -278,10 +362,7 @@ int main(){
 		}
 	}
 	grid[0][GS-1].new_val = 10;
-	//print_array(grid);
-	//cout << endl;
-	//value_iteration(grid);
-	
+	value_iteration(grid);
 	policy_iteration(grid);
 	return 0;
 }
