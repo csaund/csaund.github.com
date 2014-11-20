@@ -5,9 +5,9 @@
 .round {
 	width: 250px;
 	height: 200px;
-	border-radius: 15px;
-	-webkit-border-radius: 15px;
-	-moz-border-radius: 15px;
+	border-radius: 40px;
+	-webkit-border-radius: 40px;
+	-moz-border-radius: 40px;
 }
 
 .square {
@@ -19,7 +19,8 @@
 #me-img {
 	position: relative;
 	float: left;
-	opacity: 0.9;
+	opacity: 0.95;
+	margin-top: 15px;
 	-webkit-transition: -webkit-filter 1s;  
 	-webkit-filter: grayscale(0%);
 
@@ -31,11 +32,12 @@
 }
 
 .me-intro {
-	margin-left: 40px;
+	float: none;
+	margin-left: 300px;
 	font-weight: 300;
 	font-size: 24px;
 	color: gray;
-	width: 800px;
+	width: 600px;
 	padding-top: 10px;
 }
 
