@@ -7,15 +7,21 @@
 
 .center-600 {
 	margin: 0 auto;
-	width: 600px;
+	width: 400px;
 }
 
+.contact-icons {
+	float: left;
+	width: 400px;
+}
 
 /* Nav Styles*/
 
 .nav-effect {
-	margin-top: 45px;
+	margin-top: 10px;
 	margin-bottom: 10px;
+	margin: 0 auto;
+	width: 400px;
 }
 
 nav a {
@@ -25,6 +31,10 @@ nav a {
 	text-decoration: none;
 	font-weight: 300;
 	text-shadow: 0 0 1px rgba(255,255,255,0.3);
+	font-size: 22px;
+}
+
+#lower-nav a {
 	font-size: 18px;
 }
 

@@ -2,22 +2,40 @@
 
 /* Image Styles */
 
+.round {
+	width: 250px;
+	height: 200px;
+	border-radius: 15px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+}
+
+.square {
+	width: 60px;
+	height: 60px;
+	padding: 8px;
+}
+
 #me-img {
 	position: relative;
 	float: left;
-	opacity: 0.8;
+	opacity: 0.9;
 	-webkit-transition: -webkit-filter 1s;  
-	-webkit-filter: grayscale(30%);
+	-webkit-filter: grayscale(0%);
 
 } #me-img:hover { -webkit-filter: grayscale(0%); }
 
-.me-intro {
+.lower-content{
 	float: left;
-	margin-left: 20px;
+	margin-left: 200px;
+}
+
+.me-intro {
+	margin-left: 40px;
 	font-weight: 300;
 	font-size: 24px;
 	color: gray;
-	width: 320px;
+	width: 800px;
 	padding-top: 10px;
 }
 
