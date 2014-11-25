@@ -57,6 +57,10 @@
 	-moz-transform: translateX(700px);
 }
 
+.hidden {
+	display:none;
+}
+
 /* Footer Styles */
 
 footer {
