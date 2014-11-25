@@ -66,6 +66,11 @@
 	height: 400px;
 }
 
+iframe {
+	width: 600;
+	height: 400px;
+}
+
 /* Footer Styles */
 
 footer {
