@@ -2,18 +2,16 @@
 
 /* Image Styles */
 
-.round {
-	width: 250px;
-	height: 200px;
-	border-radius: 40px;
-	-webkit-border-radius: 40px;
-	-moz-border-radius: 40px;
-}
 
 .square {
 	width: 60px;
 	height: 60px;
 	padding: 8px;
+}
+
+.lower-content{
+	float: left;
+	margin-left: 200px;
 }
 
 #me-img {
@@ -23,15 +21,15 @@
 	margin-top: 15px;
 	-webkit-transition: -webkit-filter 1s;  
 	-webkit-filter: grayscale(0%);
-
+	width: 250px;
+	height: 200px;
+	border-radius: 40px;
+	-webkit-border-radius: 40px;
+	-moz-border-radius: 40px;
 } #me-img:hover { -webkit-filter: grayscale(0%); }
 
-.lower-content{
-	float: left;
-	margin-left: 200px;
-}
 
-.me-intro {
+#me-intro {
 	float: none;
 	margin-left: 300px;
 	font-weight: 300;
