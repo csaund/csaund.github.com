@@ -1,3 +1,0 @@
-#/bin/sh
-echo compiling C++ -Wall
-g++ -Wall -o dynasarsa $1 
