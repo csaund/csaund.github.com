@@ -29,7 +29,7 @@
 } #me-img:hover { -webkit-filter: grayscale(0%); }
 
 
-#me-intro {
+.my {
 	float: none;
 	margin-left: 300px;
 	font-weight: 300;
