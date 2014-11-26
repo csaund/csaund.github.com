@@ -1,10 +1,6 @@
 Carolyn Saund
-2/2/13
+11/26/14
 
-Much inspiration for the design of this resume was gleaned from
-the good people at google who create resume templates, as well as
-the honorable Eric Weinstein of Codeacademy who has stuck with me
-through thick and thin teaching me CSS. 
-I believe all aspects of the assignment are implemented correctly. 
-Including the time on codeacademy to learn html and CSS, this assignment
-took about 6-7 hours. 
+My personal website for which the grand vision is bio, resume, art gallery, and travel blog. 
+Getting everything up and running isn't a problem, but I really want to finish Godel Escher Bach
+so that takes up a lot of time. I'll get around to this.
