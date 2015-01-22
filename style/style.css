@@ -6,9 +6,20 @@
 
 
 /* Container styles */
+a:link {
+	color: rgb(230,116,120);
+}
 
-a {
-	color: ;
+a:visited{
+	color:rgb(204,50,50);
+}
+
+a:hover {
+	color:rgb(255,237,243);
+}
+
+a:active{
+	color:rgb(255,237,243);
 }
 
 .center-600 {
