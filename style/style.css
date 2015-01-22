@@ -110,3 +110,20 @@ nav a {
 	-moz-transform: translateY(0px);
 	transform: translateY(0px);
 }
+
+.code-style {
+  	font-family:     "Courier New"
+                    Courier
+                    monospace;
+    font-size: 12px;
+	border: 1px solid #ccc; 
+	overflow: auto; 
+	overflow-x: scroll; 
+	width: 90%; 
+	padding: 0 1em 1em 1em; 
+	margin: 1em auto 2em auto; 
+	background: #fff7f0; 
+	color: #000                   
+}
+/* Correctly stating the code and pre elements is the core principle.*/
+/* Coded here as a single line to demonstrate long lines and how it scrolls. */
