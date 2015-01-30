@@ -1,0 +1,130 @@
+@charset "utf-8";
+
+* {	font-family: 'Lato', sans-serif; margin: 0 auto; 
+	background-color: rgb(255,255,245)
+}
+
+
+/* Container styles */
+a:link {
+	color: rgb(230,116,120);
+}
+
+a:visited{
+	color:rgb(139,37,0)
+}
+
+a:hover {
+	color:rgb(204,50,50);
+}
+
+a:active{
+	color:rgb(255,237,243);
+}
+
+.center-600 {
+	margin: 0 auto;
+	width: 400px;
+}
+
+.nav-icons {
+	float: left;
+	width: 400px;
+	buffer: 50px;
+}
+
+/* Nav Styles*/
+
+.nav-effect {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin: 0 auto;
+	width: 400px;
+}
+
+nav a {
+	position: relative;
+	display: inline-block;
+	outline: none;
+	text-decoration: none;
+	font-weight: 300;
+	text-shadow: 0 0 1px rgba(255,255,255,0.3);
+	font-size: 22px;
+}
+
+#lower-nav a {
+	font-size: 18px;
+}
+
+.nav-effect a {
+	margin: 15px;
+	padding: 10px;
+	color: rgb(204,50,50);
+	text-shadow: none;
+	-webkit-transition: color 0.3s;
+	-moz-transition: color 0.3s;
+	transition: color 0.3s;
+}
+
+.nav-effect a::before,
+.nav-effect a::after {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background:  rgb(204,50,50);
+	content: '';
+	opacity: 0;
+	-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+	-moz-transition: opacity 0.3s, -moz-transform 0.3s;
+	transition: opacity 0.3s, transform 0.3s;
+	-webkit-transform: translateY(-10px);
+	-moz-transform: translateY(-10px);
+	transform: translateY(-10px);
+}
+
+.nav-effect a::before {
+	top: 0;
+	-webkit-transform: translateY(-10px);
+	-moz-transform: translateY(-10px);
+	transform: translateY(-10px);
+}
+
+.nav-effect a::after {
+	bottom: 0;
+	-webkit-transform: translateY(10px);
+	-moz-transform: translateY(10px);
+	transform: translateY(10px);
+}
+
+.nav-effect a:hover,
+.nav-effect a:focus {
+	color: rgb(139,37,0);
+}
+
+.nav-effect a:hover::before,
+.nav-effect a:focus::before,
+.nav-effect a:hover::after,
+.nav-effect a:focus::after {
+	opacity: 1;
+	-webkit-transform: translateY(0px);
+	-moz-transform: translateY(0px);
+	transform: translateY(0px);
+}
+
+.code-style {
+  	font-family:     "Courier New"
+                    Courier
+                    monospace;
+    font-size: 12px;
+	border: 1px solid #ccc; 
+	overflow: auto; 
+	overflow-x: scroll; 
+	width: 90%; 
+	padding: 0 1em 1em 1em; 
+	margin: 1em auto 2em auto; 
+	background: #fff7f0; 
+	color: #000                   
+}
+/* Correctly stating the code and pre elements is the core principle.*/
+/* Coded here as a single line to demonstrate long lines and how it scrolls. */
