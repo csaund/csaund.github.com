@@ -1,226 +1,188 @@
 <!doctype html>
-<html lang="en">
 
-	<head>
-		<meta charset="utf-8">
+<html xmlns="http://www.w3.org/1999/xhtml">
 
-		<title>reveal.js - The HTML Presentation Framework</title>
+<head> 
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Hakim El Hattab">
+	<link href="style/index.css" rel="stylesheet" type="text/css" />
+	<link href="style/style.css" rel="stylesheet" type="text/css" />
 
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css' />
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+	<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+	<script type="text/javascript" src="script/index.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js"></script>
+	<title>Carolyn Saund</title>
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/sky.css" id="theme">
+</head>
 
-		<!-- Code syntax highlighting -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
-
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-
-		<!--[if lt IE 9]>
-		<script src="lib/js/html5shiv.js"></script>
-		<![endif]-->
-	</head>
-
-	<body>
-
-		<div class="reveal">
-
-			<!-- Any section element inside of this container is displayed as a slide -->
-			<div class="slides">
-				<section>
-					<h1>WiCS</h1>
-					<h3>Professional Development Night</h3>
-					<p>
-						<small></small>
-					</p>
-				</section>
-
-				<section>
-					<section id="fragments">
-						<h2>Jobs and Internships</h2>
-					</section>
-					<section>
-						<p class="fragment">Prepare to Interview</p>
-							<p><span class="fragment highlight-red">Resume Building</span> <span class="fragment highlight-blue">LaTeX demos</span> <span class="fragment highlight-red">Personal Sites</span></p>
-
-						<aside class="notes">
-							This slide has fragments which are also stepped through in the notes window.
-						</aside>
-					</section>
-					<section>
-						<p class="fragment">Find a Position</p>
-						<p><span class="fragment highlight-red">Match your interests</span> 
-							<span class="fragment highlight-blue">Match your skills</span>
-					</section>
-					<section>
-						<p class="fragment">Get the Job</p>
-						<p><span class="fragment highlight-red">Technical Interview Tips</span>
-							<span class="fragment highlight-blue">Questions you should ask</span>
-					</section>
-				</section>
-
-				<section>
-						<h2>Resume Building</h2>
-				</section>
-
-				<section>
-						<h2>The Power of LaTeX</h2>
-							<pre><code data-trim contenteditable>
-
-% header
-\usepackage{fancyhdr}
-\pagestyle{fancy}
-\setlength{\headheight}{50pt}
-\fancyhead[C]{
-  \textbf{\large Marcella Hastings} \\ 
-  50 Curtis Ave. Somerville MA 02144\\
-  marcellahastings@gmail.com $\bullet$ marcellahastings.com\\
-  952$\cdot$688$\cdot$2246}
-
-\begin{document}
-\subsection*{Education and Skills}
-  \affiliation{Tufts University}                             {Medford, MA}
-    \position{Bachelor of Science in Computer Science, Math} {May 2015} \\
-  GPA 3.67, Dean's List 2011-2014 \\
-  \skill{Languages} {C/C++, Python, Java, some Javascript,
-                      Haskell, Scheme, XML, HTML/CSS}\\
-  \skill{Tools}     {LaTeX, git, vim, OS X, Unix/Linux, Eclipse}\\
-  \skill{Interests} {watercolors, hackathons, reading, blogging, walking}
-
-\subsection*{Experience}
-  \affiliation{MIT Lincoln Laboratory}       {Lexington, MA}
-    \position {Summer Research Student}      {May 2014 - August 2014}
-    \begin{achievements}
-      \item Developed end-to-end prototype for a cryptographically secure
-      mechanism to allow users to authenticate to services from a single
-      fortified device
-    \end{achievements}
-    \smallskip
-						</code></pre>
-				</section>
-
-				<section>
-					<h2>Personal Sites</h2>
-					<p><a href="http://marcellahastings.com">Marcella</a></p>
-					<p><a href="http://alexlenail.me">Alex</a></p>
-					<p><a href="http://www.tylerlubeck.com">Tyler</a></p>
-					<p><a href="http://www.michaelbjames.com/">Michael</a></p>
-					<p><a href="http://carolynsaund.me">Carolyn</a></p>
-
-				</section>
+<body>
 
 
-				<!-- Example of nested vertical slides -->
-				<section>
-					<section>
-						<h2>Demo Time</h2>
-						<p><a href="http://www.latextemplates.com/cat/curricula-vitae">So many resume templates</a></p>
-						<p><a href="http://www.xm1math.net/texmaker/download.html">Get TexMaker</a></p>
-						<p><a href="http://www.adobe.com/products/indesign.html">Get InDesign</a></p>
-					</section>
-					<section>
-						<h2>Share LaTeX</h2>
-						<p><a href="https://www.sharelatex.com/project/54e8eebf4e488953109e73b8">Useful for editing online.</a></p>
-					</section>
-				</section>
+	<section class="center" id="intro">
+		<nav class="contact-icons">
+			<a href="http://www.facebook.com/carolyn.saund">
+				<img class="square" src="images/facebook.png"></a>
+			<a href="http://www.linkedin.com/profile/view?id=226208567&trk=spm_pic">
+				<img class="square" src="images/linkedin.png"></a>
+			<a href="http://twitter.com/carolynmsaund">
+				<img class="square" src="images/twitter.png"></a>
+			<a href="http://github.com/csaund">
+				<img class="square" src="images/github.png"></a>
+			<a href="mailto:carolynsaund@gmail.com">
+				<img class="square" src="images/gmail.png"></a>
 
-				<section>
-					<section>
-						<h2>Finding an Internship</h2>
-						<p><span class="fragment roll-in">What you want to do</span></p>
-						<p><span class="fragment roll-in">Where you want to do it</span></p>
-					</section>
+		</nav>
+		<nav class="nav-effect">
+			<a class="who">Who</a>
+			<a class="what">What</a>
+			<a class="where">Where</a>
+		</nav>
+		<nav class="nav-effect" id="lower-nav">
+			<a class="do">do</a>
+			<a class="make">code</a>
+			<a class="say">words</a>
+			<a class="think">thoughts</a>
+		</nav>
+	</section>
 
-					<section>
-						<h2>Where to look</h2>
-						<p><span class="fragment roll-in"><a href="https://angel.co/">Look online</a></span></p>
-						<p><span class="fragment roll-in">Ask your friends</span></p>
-						<p><span class="fragment roll-in">Ask professors</span></p>
-					</section>
-				</section>
+	<section class="lower-content">
+		<img id="me-img" src="images/me_hiking.jpg">
 
+		<p class="my who" id="me-intro">
+		Quicklinks: <a href="http://github.com/csaund">github</a> and <a href="csaund_resume.pdf">resume</a>.  
+		</p>
+		<p class="my who" id="me-intro">
+		Presentation slides live under "words."
+		</p>
+		<p class="my who" id="me-intro">
+			<b>About Me</b> <br>
+				I will receive my B.S. in Computer Science and Cognitive
+				and Brain Sciences from Tufts University in May 2015. My main focus in both areas of study has primarily been <b>Machine Learning</b> and <b>Artificial Intelligence</b>, which I intend to continue in graduate studies. <br>
+				I am motivated by passion. Whatever the task, being surrounded by passionate people brings out my most inspired and creative work. I love working in teams small enough to personally interact with each member every day, and take as easily to leading a project I care about as I do to following a team lead's vision.<br>
+				I have also been described as an avid world traveller. For more about who I am and how I fill my time, check out what I <b>do</b> and <b>where</b> I've been up above.  
+		</p>
+		<p class="my who" id="me-intro">
+			<b>Professional Goals</b><br>
+			I am searching for a company that speaks to my ideal increase-awesome, decrease-suck world balance. Which is to say, I want to work somewhere that cares about its <b>global positive impact</b>. Whether it's tools that enable others to be more effective, or a direct channel for charitable influence, I care deeply about improving the world around me.<br>
+			I hope to attend a PhD program in Machine Learning within the next 5 years. 
 
-				<section>
-					<section>
-						<h2>Get the gig</h2>
-					</section>
+		<p class="my what">
+			If you may want to hire me, please look at my <a href="csaund_resume.pdf">resume</a>.
+		</p>
+		<p class="my what">
+			<b>How I spend my time</b><br>
+				When I am not wiggling my appendages in funny ways or running off to far corners of the earth, these are the ways I like to pass the days.
+		</p>
+		<p class="my what">
+			<b>Leadership and Community Service</b><br>
+			<ul class="my what">
+				<li>President of Women in Computer Science chapter at Tufts University</li>
+				<li>Vice President of Academic Development at Alpha Omicron Pi</li>
+				<li>Organizer of Undergraduate Student Committee for Faculty hiring in Tufts Computer Science Department</li>
+				<li>Instructor/Coordinator of Girls Computer Club while abroad</li>
+				<li>Girl Scout Gold Awawrd</li>
+			</ul>
+		</p>
+		<p class="my what">
+			<b>Other Memberships</b>
+			<ul class="my what">
+				<li>Cognitive Science Society</li>
+				<li>Topics in Cognitive Science</li>
+				<li>Machine Learning and Data Science Meetup, Boston</li>
+				<li>Tufts Mountain Club (Trip Leader)</li>
+			</ul>
+		</p>
 
-					<section>
-						<h2>Technical Interviews</h2>
-							<p><span class="fragment roll-in">Think out loud</span></p>
-							<p><span class="fragment roll-in">Ask for clarifications</span></p>
-							<p><span class="fragment roll-in">Understand the position</span></p>
-							<p><span class="fragment roll-in">Know what you don't know</span></p>
+		<p class="my do">
+		<b>Coming soon:</b> pictures of rock climbing in Vietnam, ice climbing in New Hampshire, those damn half-marathons I keep signing up for, my latest sea kayak adventure, and that one time I tried to bike 134 miles on a hybrid bike with no training. 
+		</p>
 
-					</section>
-					<section>
-						<h2>Questions you Should Ask</h2>
-							<p><span class="fragment roll-in">Anything important to you</span></p>
-							<p><span class="fragment roll-in">What is growth at this company like?</span></p>
-							<p><span class="fragment roll-in">What is the day to day work schedule?</span></p>
-							<p><span class="fragment roll-in">Is there ongoing employee development?</span></p>
-							<p><span class="fragment roll-in">How is workflow organized?</span></p>
-							<p><span class="fragment roll-in">What is your favorite thing about working here?</span></p>
-					</section>
+		<p class="my make">
+		Many of my projects are located on my <a href="http://github.com/csaund">github</a>.
+		</p>
+		<p class="my make">
+		I want a nice place to display code samples, so currently I'm trying to figure out how that's going
+		to work. Some cool projects I've made that I'd love to talk about are
+		</p>
+		<p class="my make">
+			<ul class="my make">
+				<li>Building a (simple) Probabilistic Model of Cognition in church</li>
+				<li>Type inference implemented in ML</li>
+				<li>Learning Go by making a Go AI</li>
+				<li>This web page which taught me oh so much about frontend dev. Please help me.</li>
+			</ul>
+		</p>
+		<p class="my make">
+			<b>Current Side Projects</b>
+				Presently, I am working on building my first mobile apps (android) which are "ReaList," a
+				list-keeping app that actually does all the things you want it to do, and "FuxWit" -- think
+				Reddit meets YikYak/Twitter for location-based information sharing. On both projects I design UI and do front-end development. <br>
+				I am also in the middle of writing a Go AI. My plan for that is to use Theano's ML library to train a neural net on Go game states and use a reinforcement learning algorithm to determine ideal game states. Last time I did this (with <a href="https://github.com/csaund/deep-pink.git">Chess</a>) it was really slow, so we'll see if it gets any better. 
+		</p>
+		<!--
+		<p class="my make">
+			<b>Code Samples</b>
+			<p class="my make code-style">
+			Well this would be a great place for a code sample 
+			if only I could figure out how to do auto styling in CSS. 
+			</p>
+		</p>
+		-->
 
-					<section>
-						<h1>Practice</h1>
-					</section>
-				</section>
+		<p class="my say">
+			Find some of my more expressive moments here.
+		</p>
+		<ul class="my say">
+			<li><a href="carolynsaund.me/wics/wics.html">WiCS Professional Development Presentation</a></li>
+			<li><a href="carolynsaund.me/slideshows/thainam.html">Thailand and Vietnam slideshow</a></li>
+		</ul>
+		<ul class="my say">
+			<li>A piece on <a href="https://medium.com/@caro.lyn/deep-learning-evolution-and-why-intelligence-is-not-just-recognition-8590533cd638">deep learning and human intelligence</a></li>
+			<li>A piece on <a href="https://medium.com/@caro.lyn/when-is-it-ok-to-hit-on-a-woman-in-stem-2316f7349680">
+				office social dynamics</a></li>
+		</ul>
+		</p>
 
-				<section>
-					<h1>Questions</h1>
-				</section>
+		<p class="my think">
+		Many of great things I've seen, read, or otherwise intellectually ingested that I think everyone should take part in. Some are harder to digest than others.
+		A short list currently is: </p><br>
+		<ul class="my think">
+			<li><a href="http://www.amazon.com/G%C3%B6del-Escher-Bach-Eternal-Golden/dp/0465026567">Godel, Escher, Bach</a></li>
+			<li><a href="https://probmods.org/">Probabilistic Models of Cognition</a></li>
+		</ul>
+		<p class="my think">
+			<b>Dangerous Memes</b>
+			<iframe src="https://embed-ssl.ted.com/talks/dan_dennett_on_dangerous_memes.html" width="640" height="360" frameborder="0" scrolling="no" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+		</p>
 
-				<section>
-					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;What would you do if you knew you would not fail?&rdquo;
-					</blockquote>
-				</section>
-			</div>
+		<p class="my where">
+			I grew up in <b>San Carlos, California</b>, in Silicon Valley. Now I am a happy transplant to the <b>Boston/Cambridge</b> area. <br>
+			Coming soon: custom google maps of my recent adventures.
+			<!--
+			<iframe width="600" height="450" frameborder="0" style="border:0" src="https://maps.googleapis.com/maps/api/staticmap?center=Brooklyn+Bridge,New+York,NY&zoom=13&size=600x300&maptype=roadmap
+&markers=color:blue%7Clabel:S%7C40.702147,-74.015794&markers=color:green%7Clabel:G%7C40.711614,-74.012318
+&markers=color:red%7Clabel:C%7C40.718217,-73.998284"></iframe>-->
+		</p>
 
-		</div>
+		<div class="text-shader-1"></div>
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+		<!---
+		<footer class="me-footer">
+			<p>Created by Carolyn Saund</p>
+			<p>carolynsaund@gmail.com</p>
+			<p>last edited 22 Feb 2015</p>
+			<p>this site is constantly under <br>
+				construction. If you have <br>
+				comments or questions,
+				feel <br>
+				free to email</p>
+		</footer>
+		-->
+	
+	</section>	
 
-		<script>
+</body>
 
-			// Full list of configuration options available at:
-			// https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				controls: true,
-				progress: true,
-				history: true,
-				center: true,
-
-				transition: 'slide', // none/fade/slide/convex/concave/zoom
-
-				// Optional reveal.js plugins
-				dependencies: [
-					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'plugin/zoom-js/zoom.js', async: true },
-					{ src: 'plugin/notes/notes.js', async: true }
-				]
-			});
-
-		</script>
-
-	</body>
 </html>
