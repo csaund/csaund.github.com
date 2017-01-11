@@ -1,0 +1,238 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{csaund-resume}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+
+\rfoot{Page \thepage \hspace{1pt}}
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Carolyn}{Saund}{ \urlstyle{same}\href{http://carolynsaund.me}{carolynsaund.me}\\
+\href{mailto:carolyn.saund@gmail.com}{carolyn.saund@gmail.com} | 650.483.4727
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education}
+
+\subsection{Tufts University}
+\descript{BSc in Computer Science & Brain and Cognitive Science}
+\location{May 2015 | Somerville, MA}
+\location{ Cum. GPA: 3.65 / 4.0 \\
+Major GPA: 3.8 / 4.0}
+\sectionsep
+
+\subsection{University of Canterbury}
+\descript{BS in Computer Science}
+\location{June 2013 - Jan 2014 | Christchurch, NZ}
+College of Engineering \\
+\location{ Cum. GPA: 4.0 / 4.0 \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links}
+Github:// \href{https://github.com/csaund}{\bf csaund} \\
+LinkedIn://  \href{https://www.linkedin.com/in/carolynsaund}{\bf carolynsaund} \\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+\subsection{Undergraduate}
+Advanced Topics in Machine Learning \\
+Computational Models of Cognitive Science \\
+Stochastic Systems \\
+Linear Algebra \\
+Machine Architecture and Assembly \\
+Advanced Topics in Artificial Intelligence \\
+Programming Languages \\
+Computational Theory \\
+\sectionsep
+
+\subsection{Continuing - Technical}
+Advanced Seminar in Cognitive Architectures \\
+Neural Networks for Machine Learning \\
+
+\subsection{Continuing - Personal Development}
+Landmark Education Forum for Young Professionals \\
+Inspirational Leadership \\
+Coaching Skills for Managers \\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Languages}
+\location{Over 5000 lines:}
+Javascript \textbullet{} Python \textbullet{} C \\
+C++ \textbullet{} \\
+\location{Over 500 lines:}
+LISP \textbullet{} \textbullet{} CSS \textbullet{} HTTP \\
+\location{Familiar:}
+Golang \textbullet{} LaTeX \textbullet{} MySQL
+\subsection{Workflow/Frameworks}
+git/github \textbullet{} NodeJS/React \textbullet{} SVN \textbullet{} \\
+ Unix/Linux \textbullet{} Jenkins/TDD \textbullet{} CI releases
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.66\textwidth}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+\runsubsection{Jibo Inc.}
+\descript{| Robot SDK Engineer }
+\location{May 2015 - Present | Boston, MA}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Employee #20, first hire of SDK team.
+\item Architected data APIs for dev tools to manage robot sensory input (cameras/mics).
+\item Won first quarterly company culture award for "outstanding cultural contributions."
+\item 20+ public speaking appearances for SDK evangelist, including SXSW and WECode."
+\sectionsep
+
+\runsubsection{Spotify}
+\descript{| Software Engineering Intern }
+\location{May 2014 – Sep 2014 | NY, NY}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}\item Full stack development of internal desktop application.
+\item Developed new web tools to improve internal testing and data collection.
+\item Worked on team to test and implement new song recommendation algorithm.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Tufts University}
+\descript{| Teaching Assistant, Computer Science }
+\location{Jan 2012 – Jan 2015 | Somerville, MA}
+\begin{tightemize}
+\item Data Structures, Machine Architecture, Machine Learning\item Taught theory and laboratory skills to students with wide range of abilities.\item Participated in designing course structure and syllabus.\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Leadership and Community Service}
+\runsubsection{Girls Who Code}
+\descript{| Instructor}
+\location{Sept 2015 – Jan 2016 | Belmont, MA}
+Instructed three levels of middle- and high-school aged students from introduction to basic data strcutures. Supplemented given course materials with additional lesson plans to emphasize CS fundamentals.
+\sectionsep
+
+\runsubsection{Women in Computer Science}
+\descript{| President}
+\location{Jan 2013 – Jan 2015 | Somerville, MA}
+\begin{tightemize}
+\item Coordinated logistics of club hackathons, speakers, and outreach.
+\item Led executive board in creating WiCS mission and club constitution.
+\item Gained University recognition and sponsorship and widespread campus presence.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Girls Computer Club}
+\descript{| Head Instructor}
+\location{July 2013 – Oct 2013 | Christchurch, NZ}
+\begin{tightemize}
+\item Developed curriculum for middle-school aged girls to promote exploration in Computer Science.
+\item Coordinated product and research demos by university faculty and guests.
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Other Extracurriculars}
+\begin{tabular}{rll}
+Alpha Omicron Pi (VP Academic Development) \textbullet{} Tufts Mountain Club Trip Coordinator  \\
+\textbullet{} WWOOF Worker (Germany) \textbullet{} Girl Scouts Gold Award \textbullet{} \\
+Ultimate Frisbee Captain \textbullet{} Project Management Book Group
+\end{tabular}
+\sectionsep
+
+\end{minipage}
+\end{document}  \documentclass[]{article}
