@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2016.5.22)  20 MAR 2017 12:35
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2016.5.22)  20 MAR 2017 12:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1265,45 +1265,25 @@ LaTeX Font Warning: Font shape `EU1/HeitiTCMedium(0)/m/sc' undefined
 .................................................
 . fontspec info: "no-scripts"
 . 
-. Font Helvetica does not contain any OpenType `Script' information.
-.................................................
-.................................................
-. fontspec info: "no-scripts"
-. 
-. Font Heiti SC Medium does not contain any OpenType `Script' information.
-.................................................
-.................................................
-. fontspec info: "no-scripts"
-. 
-. Font Heiti TC Medium does not contain any OpenType `Script' information.
-.................................................
-.................................................
-. fontspec info: "no-scripts"
-. 
 . Font Helvetica Light does not contain any OpenType `Script' information.
 .................................................
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 233.
+(Font)              <7> on input line 227.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 233.
-
-Overfull \hbox (49.60036pt too wide) in paragraph at lines 233--239
-[][] 
- []
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 241.
+(Font)              <5> on input line 227.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 236.
 [1
 
-] [2]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 241.
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 236.
  (./csaund_resume_3_20_17.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 241.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 241.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 236.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 236.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 241.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 236.
  ) 
 Here is how much of TeX's memory you used:
  22662 strings out of 493591
@@ -1314,4 +1294,4 @@ Here is how much of TeX's memory you used:
  1347 hyphenation exceptions out of 8191
  53i,11n,107p,10383b,539s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on csaund_resume_3_20_17.pdf (2 pages).
+Output written on csaund_resume_3_20_17.pdf (1 page).
