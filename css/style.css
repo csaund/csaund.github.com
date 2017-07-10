@@ -9,6 +9,10 @@ body{
 	font-family: 'Roboto Condensed', sans-serif;
 	background: #fff;
 }
+.background {
+    background: url(canadream.jpg) no-repeat center top #000;
+    background-size:cover;
+}
 body a{
 	transition: 0.5s all;
 	-webkit-transition: 0.5s all;
