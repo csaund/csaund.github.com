@@ -1,51 +1,5 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Deedy - One Page Two Column Resume
-% LaTeX Template
-% Version 1.2 (16/9/2014)
-%
-% Original author:
-% Debarghya Das (http://debarghyadas.com)
-%
-% Original repository:
-% https://github.com/deedydas/Deedy-Resume
-%
-% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
-%
-% This template uses several fonts not included with Windows/Linux by
-% default. If you get compilation errors saying a font is missing, find the line
-% on which the font is used and either change it to a font included with your
-% operating system or comment the line out to use the default font.
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-% TODO:
-% 1. Integrate biber/bibtex for article citation under publications.
-% 2. Figure out a smoother way for the document to flow onto the next page.
-% 3. Add styling information for a "Projects/Hacks" section.
-% 4. Add location/address information
-% 5. Merge OpenFont and MacFonts as a single sty with options.
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-% CHANGELOG:
-% v1.1:
-% 1. Fixed several compilation bugs with \renewcommand
-% 2. Got Open-source fonts (Windows/Linux support)
-% 3. Added Last Updated
-% 4. Move Title styling into .sty
-% 5. Commented .sty file.
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-% Known Issues:
-% 1. Overflows onto second page if any column's contents are more than the
-% vertical limit
-% 2. Hacky space on the first bullet point on the second column.
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
-\documentclass[]{csaund-resume}
+\documentclass[]{csaund_resume-openfont}
 \usepackage{fancyhdr}
 
 \pagestyle{fancy}
@@ -59,7 +13,7 @@
 %     LAST UPDATED DATE
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\lastupdated March 20, 2017
+\lastupdated October 14, 2017
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -87,15 +41,13 @@
 \subsection{Tufts University}
 \descript{BSc in Computer Science, Brain and Cognitive Science}
 \location{May 2015 | Somerville, MA}
-\location{ Cum. GPA: 3.46 / 4.0 \\
-Major GPA: 3.8 / 4.0}
 \sectionsep
 
 \subsection{University of Canterbury}
 \descript{BS in Computer Science}
 \location{June 2013 - Jan 2014 | Christchurch, NZ}
 College of Engineering \\
-\location{ Cum. GPA: 4.0 / 4.0 } 
+\location{ GPA: 4.0 / 4.0 } 
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -122,9 +74,10 @@ Programming Languages \\
 Computational Theory \\
 \sectionsep
 
-\subsection{Continuing - Technical}
+\subsection{Continuing}
 Advanced Seminar in Cognitive Architectures \\
 Neural Networks for Machine Learning \\
+Ongoing Management Training
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     SKILLS
@@ -134,14 +87,15 @@ Neural Networks for Machine Learning \\
 \subsection{Languages}
 \location{Over 5000 lines:}
 Javascript \textbullet{} Python \textbullet{} C \\
-C++ \\
+C++ \textbullet{} Java  \\
 \location{Over 500 lines:}
-LISP \textbullet{} \textbullet{} CSS \textbullet{} HTTP \\
-\location{Familiar:}
-Golang \textbullet{} LaTeX \textbullet{} MySQL
+LISP \textbullet{} CSS \textbullet{} HTTP \textbullet{} R \\
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
 \subsection{Workflow/Frameworks}
 git/github \textbullet{} NodeJS/React \textbullet{} SVN \textbullet{} \\
- Unix/Linux \textbullet{} Jenkins/TDD \textbullet{} CI releases
+ Unix/Linux \textbullet{} Jenkins/TDD \textbullet{} CI releases \\
+ Stash \textbullet{} Phabricator/arcanist \textbullet{} Gradle \\
+ MongoDB \textbullet{} Electron 
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -159,53 +113,100 @@ git/github \textbullet{} NodeJS/React \textbullet{} SVN \textbullet{} \\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Experience}
-\runsubsection{Jibo Inc.} \\
-\descript{Robot SDK Engineer }
-\location{May 2015 - Dec 2016 | Boston, MA}
+\runsubsection{Cogito} \\
+\descript{Senior Software Developer }
+\location{August 2017 - Present | Boston MA}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-\item Employee 20, first hire of SDK team.
-\item Architected data APIs for dev tools to manage robot sensory input (cameras/mics).
-\item Won first company culture award for "outstanding cultural contributions."
-\item 20+ public speaking appearances for SDK evangelist, including SXSW and WECode."
-\end{tightemize}
-\descript{Character AI Engineer }
-\location{Jan 2017 - Present | Boston, MA}
-%\vspace{\topsep} % Hacky fix for awkward extra vertical space
-\begin{tightemize}
-\item Designed and implemented robotic Emotion System and corresponding impacts on robot behavior.
+\item Originally Implemented and manage release pipeline.
+\item Full-stack development of Role-Based User Management (RBUM) APIs.
 \end{tightemize}
 \sectionsep
 
-\runsubsection{Spotify}
-\descript{| Software Engineering Intern }
+\runsubsection{Jibo} \\
+\descript{Robot SDK Engineer }
+\location{May 2015 - Dec 2016 | Boston, MA}
+\begin{tightemize}
+\item Employee 20(/110) Designed a series of tutorials from "Getting Started" to advanced usage still used to onboard internal and external developers.
+\item Architected data APIs for dev tools to manage robot sensory input from cameras and microphones.
+\item Implemented frontend UI and developer interfaces to build high-level skills.
+\item Won first company culture award for "outstanding cultural contributions."
+\end{tightemize}
+\descript{Character AI Engineer }
+\location{Jan 2017 - August 2017 | Boston, MA}
+%\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Designed and implemented robotic bi-axial Emotion System and corresponding impacts on robot behavior.
+\item Single-handedly architected and maintained robot listening pipeline (main interface for interaction).
+\end{tightemize}
+\descript{ Software Consultant }
+\location{August 2017 - Present | Boston, MA}
+%\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Continuing work to rearchitect APIs in cloud-based architecture
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Spotify} \\
+\descript{Software Engineering Intern }
 \location{May 2014 - Sep 2014 | NY, NY}
 %\vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
 \item Full stack development of internal desktop application.
-\item Developed new web tools to improve internal testing and data collection.
-\item Worked on team to test and implement new song recommendation algorithm.
+\item Developed web APIs and GUI for music annotation tools
 \end{tightemize}
 \sectionsep
 
-\runsubsection{Tufts University}
-\descript{| Teaching Assistant, Computer Science }
+\runsubsection{Tufts University}\\
+\descript{Teaching Assistant, Computer Science }
 \location{Jan 2012 - Jan 2015 | Somerville, MA}
 \begin{tightemize}
 \item Data Structures, Machine Architecture, Machine Learning
 \item Taught theory and laboratory skills to students with wide range of abilities.
-\item Participated in designing course structure and syllabus.
 \end{tightemize}
 \sectionsep
 
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     RESEARCH
+%     Public Speaking and Awards
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+\runsubsection{Drosophila}
+\begin{tightemize}
+\item Designed and programmed arduino "badge" with  genetic algorithms for LED display to recombine when near another badge.
+\end{tightemize}
+\sectionsep
+\runsubsection{The Neuron}
+\begin{tightemize}
+\item Programmed LED strips around metal sculpture to respond based on microphone input, compute audio intensity threshold, and "fire" another LED strip with enough sound intensity.
+\end{tightemize}
+\sectionsep
+
+\end{minipage}
+
+\pagebreak
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Community Service
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Leadership and Community Service}
+\runsubsection{Cambridge Inventors Club}
+\descript{| Volunteer}
+\location{Jan 2016 - Present | Cambridge, MA}
+Work with children age 8-13 on engineering fundamentals, such as iterative design, retrospectives, and cooperation
+\sectionsep
+
+\runsubsection{Boston Ultimate Disk Alliance}
+\descript{| Coach}
+\location{March 2016 - Sept 2016 | Jamaica Plain, MA}
+First coach on new high school girls team, focused on empowering women in the Boston ultimate community
+\sectionsep
+
 \runsubsection{Girls Who Code}
 \descript{| Instructor}
-\location{Sept 2015 - Jan 2016 | Belmont, MA}
+\location{Sept 2015 - June 2016 | Belmont, MA}
 Instructed three levels of middle- and high-school aged students from introduction to basic data strcutures. Supplemented given course materials with additional lesson plans to emphasize CS fundamentals.
 \sectionsep
 
@@ -215,22 +216,55 @@ Instructed three levels of middle- and high-school aged students from introducti
 \begin{tightemize}
 \item Coordinated logistics of club hackathons, speakers, and outreach.
 \item Led executive board in creating WiCS mission and club constitution.
-\item Gained University recognition and sponsorship and widespread campus presence.
 \end{tightemize}
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     AWARDS
+%     Other Extracurriculars and Awards
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Other Extracurriculars}
-\begin{tabular}{rll}
- Girl Scouts Gold Award \textbullet{} Project Management and Leadership Book Group \\
- \textbullet{} Tufts Mountain Club Trip Coordinator \textbullet{} WWOOF Worker (Germany) \\ 
- \textbullet{} Ultimate Frisbee Captain \textbullet{} Alpha Omicron Pi (VP Academic Development) \\
- \textbullet{} 20+ countries visited
-\end{tabular}
+\section{Extracurriculars}
+\runsubsection{Awards}
+\descript{ }
+\begin{tightemize}
+\item Culture Award (First Recipient) | Jibo Inc. Award for outstanding cultural contributions to the company.
+\item Girl Scout Gold Award | Highest Honor of Girl Scouts of America
+\end{tightemize}
 \sectionsep
 
-\end{minipage}
+\runsubsection{Public Speaking Appearances}
+\descript {}
+\begin{tightemize}
+\item SXSW, Robot Petting Zoo (presentation \& booth)
+\item Women Engineers who Code Conference, (technical workshop \& imposter syndrome seminar)
+\item Lesbians Who Tech, presentation on emotional future of robotics 
+\item Boston ML Meetup, presenter on Innovations in Human-Computer Interfaces
+\item MLHack Championships, (technical presentation \& hackathon judge)
+\item Tufts WICS Conference, Alumni Pannel 
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Memberships \& Activities}
+\descript{ }
+\location{Current}
+\begin{tightemize}
+\item Cognitive Science Society
+\item Project Management and Leadership Book Group 
+\item AI and Technological Futurism Book Group (Organizer)
+\item Div II Ultimate Frisbee (Captain)
+\end{tightemize}
+\location{Former (Undergraduate)}
+\begin{tightemize}
+\item Vice President of Academic Development, Alpha Omicron Pi
+\item Tufts Mountain Club, Trip Coordinator
+\item Midnight Judges Jazz Combo
+\end{tightemize}
+\location{Misc.}
+\begin{tightemize}
+\item 20+ countries visited
+\item WWOOF Worker (Germany)
+\item Avid century bike-rider and marathoner
+\end{tightemize}
+\sectionsep
+
 \end{document}  \documentclass[]{article}
