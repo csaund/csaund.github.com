@@ -575,6 +575,21 @@ p {
 .footer p a:hover{
     color: #fff;
 }
+.skills {
+    color: #fff;
+}
+.skills h6 {
+    color: #e58992;
+}
+.skills.list ul {
+    color: #fff;
+    font-size: 1.1em;
+}
+.skills.list li {
+    color: #fff;
+    font-size: 0.9em;
+    display: inline;
+}
 /*-- //footer --*/
 /*-- responsive-design --*/
 @media(max-width:1440px){
