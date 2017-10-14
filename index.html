@@ -427,38 +427,43 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<div class="modal-body modal-spa">
 					<div class="emotion">
 						<div class="col-md-4 about-left ">
-							<img src="images/japan_bamboo.jpg" class="img-responsive" alt=""/>
+							<img src="images/emotiongraph.jpg" class="img-responsive" alt=""/>
 						</div>
-						<div class="col-md-8 about-right wthree">
-							<h3>Hello, I'm <span>Carolyn M. Saund</span></h3>
-							<h4>a.k.a. Caro </h4>
-							<ul class="address">
-								<li>
-									<ul class="agileits-address-text">
-										<li><b>phone </b></li>
-										<li>+01 650 483 4727</li>
-									</ul>
-								</li>
-								<li>
-									<ul class="agileits-address-text">
-										<li><b>email </b></li>
-										<li><a href="mailto:carolyn.saund@gmail.com"> carolyn.saund@gmail.com</a></li>
-									</ul>
-								</li>
-								<li>
-									<ul class="agileits-address-text">
-										<li><b>resume </b></li>
-										<li><a href="./csaund_resume.pdf">find it here</a></li>
-									</ul>
-								</li>
-							</ul>
+						<div class="col-md-8 emotion-right wthree project-heading">
+							<h3>Bi-Axial Emotional System</span></h3>
 						</div>
 						<div class="clearfix"> </div>
-						<div class="about-text agileits-w3layouts">
-							<p> I recieved my B.S. in Computer Science and Cognitive
-								and Brain Sciences from Tufts University in May 2015. My main focus in both areas of study has primarily been <b>Machine Learning</b> and <b>Artificial Intelligence</b>, which I intend to continue in graduate studies. <br></p>
-							<p class="agile-br">I am motivated by passion. Whatever the task, being surrounded by passionate people brings out my most inspired and creative work. I love working in teams small enough to personally interact with each member every day, and take as easily to leading a project I care about as I do to following a team lead's vision.<br></p>
-							<p class="agile-br">I have also been described as an avid world traveller. For more about who I am and how I fill my time, check out how I <b>play</b> up above.</p>
+						<div class="emotion-text agileits-w3layouts project-text">
+							<p>
+							<h5>Introduction</h5>
+							This emotion system is meant to be an abstract representation of an agent's internal emotional state that is influenced with a combination of external input sensors and sentiment appraisal rules.
+							Emotional Cognition is a fun subfield of cognitive science, with many potential emotional models.
+							</p>
+							<p>
+							<h5>This Space</h5>
+							This Emotion Space uses a 2D representation of an emotional plane, with the axis Valence and Confidence.
+							The ranges of these two factors map out the Emotional Space, which creates a mapping of Valence and Confidence
+							values to labeled emotions, shown below.
+							I settled on a 2D emotional graph (omitting the academically popular energy or arousal axis) for simplicity.
+							Ultimately, these 8 labeled emotions capture quite a large range of expressivity, and the system is designed
+							such that adding another axis later on, if we decide it is necessary, would be quite simple.
+							An example of a differentiation that might happen would be Joyful (1, 1, 0) (neutral energy) could become either
+							Ecstatic (1, 1, 1) (high energy) or Satisfied (1, 1, -1) (low energy). As a proof of concept for the emotion
+							system, it was decided these nuances represent far more work than I was comfortable investing without user
+							feedback.
+							</p>
+							<p>
+							<h5>Axis</h5>
+							Valence, as used in psychology, especially in discussing emotions, means the intrinsic attractiveness/"good"-ness
+							(positive valence) or averseness/"bad"-ness (negative valence) of an event, object, or situation. The term is also
+							used to characterize and categorize specific emotions.
+							Confidence refers to an emotional sentiments' reflection of personal self-confidence.
+							<h5>Decay</h5>
+							Emotions decay. This emotional baseline is 0.45 valence, 0.2 confidence. The decay rate of this
+							emotional state varies based on the difference between emotional state and baseline emotions.
+							Without any interaction, the state will always return to this state within an hour, despite any
+							original impact.
+							</p>
 						</div>
 					</div>
 				</div>

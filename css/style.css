@@ -572,7 +572,7 @@ ul.nav.navbar li a {
     margin: 22em 0 6em;
     padding: 3em;
 }
-.about-left img { 
+.about-left img {
     width: 38%;
     margin: 0 auto 1em;
 }
@@ -580,10 +580,34 @@ ul.nav.navbar li a {
     padding: 0 3em;
 }
 .about h3 {
-    font-size: 2.2em; 
+    font-size: 2.2em;
 }
 .about-text {
     padding: 2em 3em 0;
+}
+.emotion-right {
+    padding: 0 3em;
+}
+.emotion h3 {
+    font-size: 2.2em;
+}
+.emotion-text {
+    padding: 2em 3em 0;
+}
+.project-heading {
+    color: #E79EA7
+}
+.project-text {
+    color: white;
+    font-size: 1em;
+    color: #fff;
+    line-height: 2em;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+.project-text h5 {
+    color: #E79EA7;
+    font-weight: bold;
 }
 .experience-grids {
     width: 90%; 
@@ -720,7 +744,10 @@ h4.modal-title {
 }
 .about h3 {
     font-size: 2em;
-} 
+}
+.emotion h3 {
+    font-size: 2em;
+}
 .experience-left h3 {
     font-size: 1.3em; 
 }
@@ -758,6 +785,18 @@ h4.modal-title {
 }
 .about h4 {
     font-size: 1em; 
+    margin-top: 0.8em;
+}
+.emotion-left img {
+    width: 45%;
+    border-width: 3px;
+    padding: 5px;
+}
+.emotion h3 {
+    font-size: 1.6em;
+}
+.emotion h4 {
+    font-size: 1em;
     margin-top: 0.8em;
 }
 ul.address li ul.agileits-address-text li { 
