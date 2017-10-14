@@ -210,6 +210,45 @@ h5.modal-title {
     border-radius: 50%;
     padding: 10px;
 }
+.project-left img {
+    padding: 10px;
+}
+.project-img img {
+    padding: 10px;
+}
+.project h3 {
+    font-size: 2.2em;
+}
+.project-text {
+    padding: 2em 3em 0;
+}
+.project-heading {
+    color: #E79EA7
+}
+.project-text {
+    color: white;
+    font-size: 1em;
+    color: #fff;
+    line-height: 2em;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+.project-text h5 {
+    color: #E79EA7;
+    font-weight: bold;
+}
+.project-text .agileits-w3layouts {
+    color: white;
+    font-size: 1em;
+    color: #fff;
+    line-height: 2em;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+.project-text .agileits-w3layouts h5 {
+    color: #E79EA7;
+    font-weight: bold;
+}
 ul.address {
     margin-top: 1.5em;
     border-top: 1px dashed #F5F2E1;
@@ -588,26 +627,18 @@ ul.nav.navbar li a {
 .emotion-right {
     padding: 0 3em;
 }
-.emotion h3 {
+.project-left img {
+    width: 38%;
+    margin: 0 auto 1em;
+}
+.project-right {
+    padding: 0 3em;
+}
+.project h3 {
     font-size: 2.2em;
 }
-.emotion-text {
-    padding: 2em 3em 0;
-}
-.project-heading {
-    color: #E79EA7
-}
 .project-text {
-    color: white;
-    font-size: 1em;
-    color: #fff;
-    line-height: 2em;
-    font-weight: 300;
-    letter-spacing: 1px;
-}
-.project-text h5 {
-    color: #E79EA7;
-    font-weight: bold;
+    padding: 2em 3em 0;
 }
 .experience-grids {
     width: 90%; 
@@ -642,6 +673,12 @@ ul.nav.navbar li a {
     padding: 0 2em;
 }
 .about-text {
+    padding: 1.5em 2em 0;
+}
+.project-right {
+    padding: 0 2em;
+}
+.project-text {
     padding: 1.5em 2em 0;
 }
 p { 
@@ -745,7 +782,7 @@ h4.modal-title {
 .about h3 {
     font-size: 2em;
 }
-.emotion h3 {
+.project h3 {
     font-size: 2em;
 }
 .experience-left h3 {
@@ -787,15 +824,15 @@ h4.modal-title {
     font-size: 1em; 
     margin-top: 0.8em;
 }
-.emotion-left img {
+.project-left img {
     width: 45%;
     border-width: 3px;
     padding: 5px;
 }
-.emotion h3 {
+.project h3 {
     font-size: 1.6em;
 }
-.emotion h4 {
+.project h4 {
     font-size: 1em;
     margin-top: 0.8em;
 }
