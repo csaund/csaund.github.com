@@ -10,7 +10,7 @@ body{
 	background: #fff;
 }
 .background {
-    background: url(canadream.jpg) no-repeat center top #000;
+    background: url(geoart.jpg) no-repeat center top #000;
     background-size:cover;
 }
 body a{
@@ -37,7 +37,7 @@ body a:hover{
 }
 /*-- top-nav --*/  
 .top-nav {
-    background: #ec407a;
+    background: #EBA4AC;
 }
 .nav > li {
     display: inline-block;
@@ -54,7 +54,7 @@ ul.nav.navbar li a {
     font-family: 'Text Me One', sans-serif;
 }
 ul.nav.navbar li a:hover,ul.nav.navbar li a.active{ 
-	color:#ec407a;
+	color:#EBA4AC;
 	background:transparent;
 	outline:none;
 } 
@@ -67,11 +67,12 @@ ul.nav.navbar li a:focus{
 .w3ls-hover span {
 	display: block;
 	position: relative;
+    color: #F5F2E1;
 } 
 .w3ls-hover span::before {
 	content: attr(data-letters);
 	position: absolute;
-	color: #000;
+	color: #765D63;
 	left: 0;
 	overflow: hidden;
 	white-space: nowrap;
@@ -106,15 +107,20 @@ ul.nav.navbar li a.w3ls-icon:hover {
 	background-size:cover;
 }
 .banner-text {
-    margin: 22em 0 10em;
+    margin-top: 2em;
+    margin-bottom: 20em;
     text-align: center;
-    background: rgba(0, 0, 0, 0.72);
+    background: rgba(16, 5, 0, 0.5);
     display: inline-block;
     padding: 4em;
 }
+.banner-text.agileinfo-text {
+    margin-top: 2em;
+    margin-bottom: 20em;
+}
 .banner-text h1 {
     font-size: 3.5em;
-    color: #fff;
+    color: #e5b5b1;
 	font-weight: 900;
 }
 .banner-text h6 {
@@ -132,7 +138,7 @@ width: 100%;
 /*-- //banner --*/  
 /*-- modal-basic --*/
 .modal{
-    background: rgba(19, 198, 245, 0.84);
+    background: rgba(245, 242, 225, 0.84);
 	background-size:cover; 
 	padding: 0 !important; 
 }
@@ -187,7 +193,7 @@ h5.modal-title {
     color: #fff;
 }
 .about h3 span {
-    color: #f3286c;
+    color: #EBA4AC;
 }
 .about h4 {
     font-size: 1.2em;
@@ -196,7 +202,7 @@ h5.modal-title {
 }
 
 .about-left img {
-    border: 5px solid #1dadd3;
+    border: 5px solid #F5F2E1;
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
 	-o-border-radius: 50%;
@@ -206,7 +212,7 @@ h5.modal-title {
 }
 ul.address {
     margin-top: 1.5em;
-    border-top: 1px dashed #1d7288;
+    border-top: 1px dashed #F5F2E1;
     padding-top: 0.5em;
 }
 ul.address li {
@@ -227,7 +233,7 @@ ul.address li ul.agileits-address-text li a {
 	text-decoration:none;
 }
 ul.address li ul.agileits-address-text li a:hover{
-    color: #0FF;
+    color: #F5F2E1;
 } 
 .about-text {
     padding: 3em 3em  0;
@@ -249,7 +255,7 @@ p {
 }
 .bar-grids h4 {
     font-size: 1.6em;
-    color: #1dadd3;
+    color: #F5F2E1;
     margin-bottom: 1.5em;
     border-bottom: 1px dashed #484848;
     padding-bottom: 0.5em;
@@ -269,7 +275,7 @@ p {
     border-radius: 0;
 }
 .progress-bar { 
-    background-color: #b3315d;
+    background-color: #EBA4AC;
 }
 .bar-grids h6 {
     font-size: 1em;
@@ -293,10 +299,10 @@ p {
 .experience-left {
     float: left;
     width: 30%;
-    background: #ec407a;
+    background: #EBA4AC;
     text-align: center;
     padding: 2em 0;
-    border: 2px solid #ec407a;
+    border: 2px solid #EBA4AC;
 	-webkit-transition: .5s all;
 	-moz-transition: .5s all;
 	transition: .5s all;
@@ -306,7 +312,7 @@ p {
 .experience-right {
     float: right;
     width: 70%;
-    border: 1px solid #ec407a;
+    border: 1px solid #EBA4AC;
 	padding: 1.5em;
 }
 .experience-left h3 {
@@ -327,7 +333,7 @@ p {
 }
 .experience-right h4 {
     font-size: 1.6em;
-    color: #1dadd3;
+    color: #F5F2E1;
     margin-bottom: 0.5em;
 	font-weight: 900;
 }
@@ -362,7 +368,7 @@ p {
     transition: all 0.5s;
     opacity: 1;
     filter: alpha(opacity=100);
-	border: 2px solid #22add3;
+	border: 2px solid #F5F2E1;
 }
 .gallery-w3ls-hover img { 
 	width: 100%;
@@ -436,7 +442,7 @@ p {
 	position: relative;
 }
 .styled-input label {
-    color: #1dadd3;
+    color: #F5F2E1;
     padding: 0.5em .9em;
     position: absolute;
     top: 0;
@@ -454,7 +460,7 @@ p {
 	display: block;
 	width: 0;
 	height:2px;
-	background:#ec407a;
+	background:#EBA4AC;
 	position: absolute;
 	bottom: 0;
 	left: 0;
@@ -467,7 +473,7 @@ p {
 }
 .styled-input input:focus ~ label, .styled-input input:valid ~ label,.styled-input textarea:focus ~ label ,.styled-input textarea:valid ~ label{
     font-size: 1.1em;
-    color: #ec407a;
+    color: #EBA4AC;
     top: -1.3em;
     -webkit-transition: all 0.125s;
 	-moz-transition: all 0.125s; 
@@ -492,8 +498,8 @@ p {
     font-size: 1em;
     margin: 1em 0 0 0;
     -webkit-appearance: none;
-    background: #ec407a;
-    border: solid 1px #ec407a; 
+    background: #EBA4AC;
+    border: solid 1px #EBA4AC;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
 	-o-border-radius: 3px;
@@ -506,8 +512,8 @@ p {
 	transition: 0.5s all;
 }
 .contact input[type="submit"]:hover { 
-	background-color:#1dadd3;
-	border-color:#1dadd3;
+	background-color:#F5F2E1;
+	border-color:#F5F2E1;
 } 
 /*-- //contact --*/ 
 /*-- footer --*/
@@ -521,7 +527,7 @@ p {
 	font-size: 1.1em;
 }
 .footer p a{
-    color: #1dadd3;
+    color: #F5F2E1;
 }
 .footer p a:hover{
     color: #fff;
@@ -659,7 +665,7 @@ p.agile-br {
     border: none;
     box-shadow: none;
     position: absolute;
-    background: #ec407a;
+    background: #EBA4AC;
     width: 100%;
     z-index: 9;
 }
