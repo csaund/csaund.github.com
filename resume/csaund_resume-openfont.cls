@@ -1,5 +1,5 @@
 % Intro Options
-\ProvidesClass{deedy-resume-openfont}[2014/04/30 CV class]
+\ProvidesClass{csaund_resume-openfont}[2014/04/30 CV class]
 \NeedsTeXFormat{LaTeX2e}
 \DeclareOption{print}{\def\@cv@print{}}
 \DeclareOption*{%
@@ -16,7 +16,7 @@
 \usepackage[absolute]{textpos}
 \usepackage[UKenglish]{babel}
 \usepackage[UKenglish]{isodate}
-\usepackage{fontspec,xltxtra,xunicode}
+\usepackage{fontspec,xunicode}
 
 % Color definitions
 \definecolor{date}{HTML}{666666} 
@@ -26,8 +26,13 @@
 
 % Set main fonts
 \defaultfontfeatures{Mapping=tex-text}
-\setmainfont[Color=primary, Path = fonts/lato/]{Lato-Lig}
-\setsansfont[Scale=MatchLowercase,Mapping=tex-text, Path = fonts/raleway/]{Raleway-ExtraLight}
+
+% debug the path....
+\def\foo\currentfilepath
+\show\foo
+
+\setmainfont [Color=primary, Path=fonts/lato/]{Lato-Lig}
+\setsansfont[Scale=MatchLowercase,Mapping=tex-text, Path=fonts/raleway/]{Raleway-ExtraLight}
 \newcommand{\custombold}[1]{\color{subheadings}\fontspec[Path = fonts/lato/]{Lato-Reg}\selectfont #1 \normalfont}
 
 % Date command
