@@ -1,8 +1,8 @@
-This is LuaTeX, Version 0.95.0 (TeX Live 2016)  (format=lualatex 2016.5.22)  17 SEP 2018 10:35
+This is LuaTeX, Version 0.95.0 (TeX Live 2016)  (format=lualatex 2016.5.22)  17 SEP 2018 10:34
  restricted system commands enabled.
  file:line:error style messages enabled.
-**csaund_industry_sept18.tex
-(./csaund_industry_sept18.tex
+**csaund_resume_3_20_17.tex
+(./csaund_resume_3_20_17.tex
 LaTeX2e <2016/03/31>
 Babel <3.9r> and hyphenation patterns for 1 language(s) loaded.
 (./csaund_resume-openfont.cls
@@ -519,7 +519,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.125 seconds)
+luaotfload | main : initialization completed in 0.126 seconds)
 Lua module: fontspec 2016/02/01 2.5a Advanced font selection for LuaLaTeX.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/fontspec/fontspec-luatex.sty
 Package: fontspec-luatex 2016/02/01 v2.5a Font selection for XeLaTeX and LuaLaTe
@@ -774,9 +774,9 @@ TextBlockOrigin set to 0mm x 5mm
 \f@ncyO@olf=\skip59
 \f@ncyO@orf=\skip60
 )
-No file csaund_industry_sept18.aux.
+(./csaund_resume_3_20_17.aux)
+\openout1 = csaund_resume_3_20_17.aux
 
-\openout1 = csaund_industry_sept18.aux
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
 LaTeX Font Info:    ... okay on input line 9.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
@@ -795,6 +795,7 @@ LaTeX Font Info:    Checking defaults for EU2/lmr/m/n on input line 9.
 LaTeX Font Info:    ... okay on input line 9.
 LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 9.
 LaTeX Font Info:    Try loading font information for T3+cmr on input line 9.
+
 (/usr/local/texlive/2016/texmf-dist/tex/latex/tipa/t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
@@ -878,9 +879,11 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 9.
 LaTeX Info: Redefining \pageref on input line 9.
 LaTeX Info: Redefining \nameref on input line 9.
+
+(./csaund_resume_3_20_17.out) (./csaund_resume_3_20_17.out)
 \@outlinefile=\write3
 
-\openout3 = csaund_industry_sept18.out
+\openout3 = csaund_resume_3_20_17.out
 
 ABD: EveryShipout initializing macros
 isodate: babel.sty has been loaded
@@ -1414,18 +1417,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 112--113
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 265.
 [2]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 265.
- (./csaund_industry_sept18.aux)
+ (./csaund_resume_3_20_17.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 265.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 265.
+Package rerunfilecheck Info: File `csaund_resume_3_20_17.out' has not changed.
+(rerunfilecheck)             Checksum: E8A148D013B70A8DEECB0FEBB1B631C6;725.
 
-
-Package rerunfilecheck Warning: File `csaund_industry_sept18.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `csaund_industry_sept18.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  E8A148D013B70A8DEECB0FEBB1B631C6;725.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -1433,23 +1430,23 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 265.
 )
 
 Here is how much of LuaTeX's memory you used:
- 20796 strings out of 495119
+ 20825 strings out of 495119
  100000,460012 words of node,token memory allocated
  965 words of node memory still in use:
    4 hlist, 1 vlist, 1 rule, 67 glue, 34 attribute, 48 glue_spec, 34 attribute_l
 ist, 1 write nodes
    avail lists: 2:742,3:243,4:131,5:209,6:2626,7:885,8:53,9:234,10:19,11:265
- 23353 multiletter control sequences out of 65536+600000
+ 23367 multiletter control sequences out of 65536+600000
  48 fonts using 3219503 bytes
- 55i,11n,107p,360b,526s stack positions out of 5000i,500n,10000p,200000b,100000s
+ 55i,11n,107p,359b,526s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.o
 tf></usr/local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman10-regula
 r.otf><./fonts/lato/Lato-Bol.ttf><./fonts/raleway/Raleway-Medium.otf><./fonts/la
 to/Lato-Lig.ttf><./fonts/lato/Lato-Hai.ttf>
-Output written on csaund_industry_sept18.pdf (2 pages, 51207 bytes).
+Output written on csaund_resume_3_20_17.pdf (2 pages, 51890 bytes).
 
-PDF statistics: 75 PDF objects out of 1000 (max. 8388607)
- 52 compressed objects within 1 object stream
+PDF statistics: 115 PDF objects out of 1000 (max. 8388607)
+ 92 compressed objects within 1 object stream
  16 named destinations out of 1000 (max. 131072)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 105 words of extra memory for PDF output out of 10000 (max. 10000000)
 

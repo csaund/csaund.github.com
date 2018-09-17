@@ -1,10 +1,10 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2016.5.22)  17 SEP 2018 10:37
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2016.5.22)  17 SEP 2018 10:38
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**csaund_resume-openfont.tex
-(./csaund_resume-openfont.tex
+**csaund_basic.tex
+(./csaund_basic.tex
 LaTeX2e <2016/03/31>
 Babel <3.9r> and hyphenation patterns for 83 language(s) loaded.
 (./csaund_resume-openfont.cls
@@ -629,8 +629,9 @@ anguage=DFLT;mapping=tex-text;mapping=tex-text;mapping=tex-text;+smcp;"
 .................................................
 
 TextBlockOrigin set to 0mm x 5mm
-) (./csaund_resume-openfont.aux)
-\openout1 = `csaund_resume-openfont.aux'.
+)
+No file csaund_basic.aux.
+\openout1 = `csaund_basic.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 2.
 LaTeX Font Info:    ... okay on input line 2.
@@ -652,7 +653,6 @@ LaTeX Font Info:    Checking defaults for EU1/lmr/m/n on input line 2.
 LaTeX Font Info:    ... okay on input line 2.
 LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 2.
 LaTeX Font Info:    Try loading font information for T3+cmr on input line 2.
-
 (/usr/local/texlive/2016/texmf-dist/tex/latex/tipa/t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
@@ -705,11 +705,12 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 2.
 LaTeX Info: Redefining \pageref on input line 2.
 LaTeX Info: Redefining \nameref on input line 2.
-
-(./csaund_resume-openfont.out) (./csaund_resume-openfont.out)
 \@outlinefile=\write3
-\openout3 = `csaund_resume-openfont.out'.
+\openout3 = `csaund_basic.out'.
 
+
+
+Package hyperref Warning: Rerun to get /PageLabels entry.
 
 ABD: EveryShipout initializing macros
 isodate: babel.sty has been loaded
@@ -898,7 +899,7 @@ Package atveryend Info: Empty hook `BeforeClearDocument' on input line 192.
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 192.
- (./csaund_resume-openfont.aux)
+ (./csaund_basic.aux)
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 192.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 192.
 
@@ -912,12 +913,12 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 192.
  ) 
 Here is how much of TeX's memory you used:
- 22290 strings out of 493591
- 399598 string characters out of 6143546
- 433042 words of memory out of 5000000
- 25516 multiletter control sequences out of 15000+600000
+ 22281 strings out of 493591
+ 399353 string characters out of 6143546
+ 432979 words of memory out of 5000000
+ 25512 multiletter control sequences out of 15000+600000
  6156 words of font info for 62 fonts, out of 8000000 for 9000
  1347 hyphenation exceptions out of 8191
- 53i,12n,107p,10379b,517s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 53i,12n,107p,10369b,517s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on csaund_resume-openfont.pdf (1 page).
+Output written on csaund_basic.pdf (1 page).
